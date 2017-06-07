@@ -1,0 +1,100 @@
+.section-name
+  padding: 2rem 0 0
+  margin: 0
+  text-align: center
+  font-size: 40px
+  font-weight: 700
+  color: gray
+.hr
+  width: 100px
+
+.grid
+  margin: 0 auto
+  padding: 1rem 0 4rem
+  text-align: center
+  list-style: none
+  display: flex
+  max-width: 1500px
+  justify-content: center
+  flex-wrap: wrap
+
+  figure
+    position: relative
+    overflow: hidden
+    margin: 5px
+    display: inline-block
+    min-width: 320px
+    max-width: 480px
+    max-height: 360px
+    cursor: pointer
+
+
+    img
+      position: relative
+      display: block
+      max-width: 100%
+      min-height: 100%
+      //opacity: 0.8
+      transform: scale(1.06)
+      transition: .35s
+
+    figcaption
+      background: none
+      color: white
+      text-transform: uppercase
+      backface-visibility: hidden
+      ::after, ::before
+        pointer-events: none
+
+    figcaption, figcaption > a
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+    figcaption > a
+      z-index: 1000
+      text-indent: 200%
+      white-space: nowrap
+      font-size: 0
+      opacity: 0
+    p
+      margin: 0 auto
+      letter-spacing: 1px
+      font-size: 90%
+      max-width: 80%
+      transform: scale(1.5)
+    h2
+      margin: 0
+      word-spacing: -0.15em
+      font-weight: 800
+      padding: 20% 0 20px 0
+
+.effect-chico:hover
+  background: $hover-figure
+  figcaption::before
+    transform: scale(1)
+    opacity: 1
+
+  p
+    opacity: 1
+    transform: scale(1)
+    transition: .35s
+  img
+    opacity: .5
+    transform: scale(1)
+
+figcaption::before
+  position: absolute
+  top: 30px
+  right: 30px
+  left: 30px
+  bottom: 30px
+  border: 1px solid white
+  content: ''
+  transform: scale(1.1)
+  opacity: 0
+  transition: .35s
+p
+  opacity: 0
+  transition: .35s

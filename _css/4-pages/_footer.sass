@@ -1,0 +1,29 @@
+footer
+  text-align: center
+  #instafeed
+    width: 100%
+    display: flex
+    justify-content: center
+    margin: 0
+    padding: 0
+    img
+      width: calc(100%/6)
+      height: calc(100%/6)
+
+  .copyright
+    min-height: 200px
+    color: white
+    background-color: #333
+    p
+      margin: 0
+      padding-top: 150px
+
+// media
+
+@media (min-width: 320px) and (max-width: 750px)
+  footer
+    #instafeed
+      flex-wrap: wrap
+      img
+        width: calc(100%/3)
+        height: calc(100%/3)

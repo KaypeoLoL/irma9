@@ -1,0 +1,79 @@
+header
+  background-color: white
+
+nav
+  display: flex
+  justify-content: flex-end
+  width: 100%
+
+  ul
+    list-style: none
+    margin: 0 10px 0
+  li
+    display: inline-block
+    line-height: 50px
+    padding: 0 10px
+    &:hover
+      a
+        color: white
+    a
+      color: rgba(255, 255, 255, 0.8)
+      font-size: 20px
+
+
+  +phone
+    .burger-icon
+      display: block
+      cursor: pointer
+      margin: 10px 20px 0
+      height: 35px
+
+      .burger-line
+        width: 35px
+        height: 5px
+        background-color: white
+        margin: 5px 0
+    ul
+      overflow: hidden
+      background: #505050
+      height: 0
+      margin: 0
+      padding: 0
+    .open
+      height: auto
+      z-index: 2
+      li
+        text-align: left
+        width: 100%
+        margin: 0
+        padding: 0
+      a
+        color: #fff
+        padding: 10px
+        border-bottom: 1px solid #404040
+        display: block
+        margin: 0
+
+
+
+
+.hero
+  min-height: 450px
+  background-image: url(../img/heroes/index-hero.jpg)
+  position: relative
+  background-position: center
+  background-size: cover
+  +phone
+    min-height: 250px
+.name
+  text-align: center
+  font-family: 'Baloo Bhaina'
+  font-size: 72px
+  font-weight: normal
+  color: white
+  letter-spacing: 3px
+  margin: 0px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
